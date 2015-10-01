@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="movieDB">
+<head>
+  <meta charset="utf-8">
+  <title>Movie Database</title>
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="normalize.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- {{movieList | json}} -->
+  <div class="wrapper">
+   <ng-view></ng-view>
+  </div>
+  <!-- // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="catalog/catalog.js"></script>
+  <script src="movie/movie.js"></script>
+</body>
+</html>

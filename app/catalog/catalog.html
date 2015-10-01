@@ -1,0 +1,6 @@
+ <div class="movie-container cf" ng-repeat="movie in movieList">
+      <a href="#/movie/{{movie.id}}" class="movie-poster">
+        <img class="thumbnail" ng-src="img/posters/{{movie.poster_path}}">
+        <h5>{{movie.title}}</h5>
+      </a>
+    </div>
